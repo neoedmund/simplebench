@@ -59,7 +59,7 @@ run in commmand line(need recent JRE or JDK):
 ```
 
 ### Amazon Linux AMI
-'''
+```
 benchmark:CpuMem finished in 10015, turn = 141 score = 42236.64503245132
 benchmark:CpuMem finished in 10015, turn = 126 score = 37743.384922616075
 benchmark:CpuMem finished in 10015, turn = 142 score = 42536.19570644034
@@ -70,7 +70,7 @@ disk refvalue=70176
 disk refvalue=70176
 disk refvalue=70176
 benchmark:Disk finished in 10252, turn = 10 score = 292.6258291065158
-'''
+```
 
 ### please add more here
 contribute.
