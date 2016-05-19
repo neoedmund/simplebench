@@ -1,0 +1,8 @@
+{
+baseDir:".",
+prjs:[
+	[simplebench, "." , { main:"neoe.bench.Test1"} ],
+],
+debug:true,
+}
+
