@@ -58,5 +58,19 @@ run in commmand line(need recent JRE or JDK):
 > benchmark:Disk finished in 11224, turn = 8 score = 213.82751247327155
 ```
 
+### Amazon Linux AMI
+'''
+benchmark:CpuMem finished in 10015, turn = 141 score = 42236.64503245132
+benchmark:CpuMem finished in 10015, turn = 126 score = 37743.384922616075
+benchmark:CpuMem finished in 10015, turn = 142 score = 42536.19570644034
+benchmark:CpuMem finished in 10029, turn = 37 score = 11067.903081064911
+multiThreadBench x4 finished in 10036, score = 33396.032185643155
+Start benchmark:Disk
+disk refvalue=70176
+disk refvalue=70176
+disk refvalue=70176
+benchmark:Disk finished in 10252, turn = 10 score = 292.6258291065158
+'''
+
 ### please add more here
 contribute.
