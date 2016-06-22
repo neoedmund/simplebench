@@ -142,7 +142,7 @@ public class Test1 {
 		long t = t2 - t1;
 		if (t == 0)
 			t = 1;
-		double ret = sum / (double) cc;
+		double ret = sum / (double) t;
 		System.out.printf("multiThreadBench x%,d finished in %,d ms, score = %,d \n"
 			, cc, t, (long) ret);
 		return ret;
@@ -164,9 +164,9 @@ public class Test1 {
 			}
 		}
 		double score = performance / (double) t;
-		System.out.printf("benchmark:%s finished in %,d ms, turn = %,d score = %,d \n" 
+		System.out.printf("benchmark:%s finished in %,d ms, %,d turns, score = %,d \n" 
 			, name, t, turn, (long) score);
-		return score;
+		return performance;
 	}
 
 	interface BenchTask {
@@ -189,7 +189,24 @@ benchmark:Disk finished in 15311, score = 39.187512246097576
 
 E5408 4 core, sata2
 
-multiThreadBench x16 finished in 12,678 ms, score = 27,608
-benchmark:Disk finished in 13,495 ms, turn = 2 score = 44
+benchmark:CpuMem finished in 10,044 ms, 78 turns, score = 23,297
+benchmark:CpuMem finished in 10,023 ms, 81 turns, score = 24,244
+benchmark:CpuMem finished in 10,059 ms, 84 turns, score = 25,052
+benchmark:CpuMem finished in 10,020 ms, 83 turns, score = 24,850
+benchmark:CpuMem finished in 10,064 ms, 63 turns, score = 18,779
+benchmark:CpuMem finished in 10,028 ms, 76 turns, score = 22,736
+benchmark:CpuMem finished in 10,067 ms, 79 turns, score = 23,542
+benchmark:CpuMem finished in 10,091 ms, 68 turns, score = 20,216
+benchmark:CpuMem finished in 10,079 ms, 80 turns, score = 23,811
+benchmark:CpuMem finished in 10,075 ms, 71 turns, score = 21,141
+benchmark:CpuMem finished in 10,012 ms, 92 turns, score = 27,566
+benchmark:CpuMem finished in 10,015 ms, 85 turns, score = 25,461
+benchmark:CpuMem finished in 10,013 ms, 114 turns, score = 34,155
+benchmark:CpuMem finished in 10,015 ms, 123 turns, score = 36,844
+benchmark:CpuMem finished in 10,008 ms, 122 turns, score = 36,570
+benchmark:CpuMem finished in 10,019 ms, 137 turns, score = 41,022
+multiThreadBench x16 finished in 12,406 ms, score = 347,251
+Start benchmark:Disk
+benchmark:Disk finished in 13,559 ms, 2 turns, score = 44
 			
  */
