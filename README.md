@@ -44,18 +44,28 @@ run in commmand line(need recent JRE or JDK):
 > multiThreadBench x4 finished in 16419, score = 367.20373048067046
 ```
 
-### AMD A6-3650 APU  (FIXME:old data)　
+### AMD A6-3650 APU
 ```
-> benchmark:CpuMem finished in 10000, turn = 435 score = 130500.0
-> benchmark:CpuMem finished in 10003, turn = 409 score = 122663.2010396881
-> benchmark:CpuMem finished in 10006, turn = 409 score = 122626.42414551269
-> benchmark:CpuMem finished in 10012, turn = 413 score = 123751.49820215741
-> multiThreadBench x4 finished in 10023, score = 124885.28084683954
-> Start benchmark:Disk
-> disk refvalue=70176
-> disk refvalue=70176
-> disk refvalue=70176
-> benchmark:Disk finished in 11224, turn = 8 score = 213.82751247327155
+Start benchmark v2.2
+CpuMemSingle in 6,013 ms(278 turns), score = 138,699 
+CpuMemMT00 in 6,011 ms(74 turns), score = 36,932 
+CpuMemMT01 in 6,020 ms(82 turns), score = 40,863 
+CpuMemMT02 in 6,015 ms(73 turns), score = 36,408 
+CpuMemMT03 in 6,027 ms(75 turns), score = 37,332 
+CpuMemMT06 in 6,001 ms(80 turns), score = 39,993 
+CpuMemMT04 in 6,032 ms(81 turns), score = 40,285 
+CpuMemMT09 in 6,000 ms(76 turns), score = 38,000 
+CpuMemMT07 in 6,023 ms(77 turns), score = 38,352 
+CpuMemMT11 in 6,001 ms(76 turns), score = 37,993 
+CpuMemMT10 in 6,022 ms(75 turns), score = 37,363 
+CpuMemMT12 in 6,000 ms(81 turns), score = 40,500 
+CpuMemMT08 in 6,039 ms(74 turns), score = 36,761 
+CpuMemMT05 in 6,045 ms(78 turns), score = 38,709 
+CpuMemMT13 in 6,014 ms(75 turns), score = 37,412 
+CpuMemMT15 in 6,013 ms(77 turns), score = 38,416 
+CpuMemMT14 in 6,047 ms(76 turns), score = 37,704 
+CpuMemMT x16 in 6,164 ms, score = 598,637 
+DiskSingle in 7,216 ms(5 turns), score = 207 
 ```
 
 ### Amazon Linux AMI (Xeon E5-2670 v2 @ 2.50GHz (1 cpu core))
