@@ -58,7 +58,7 @@ run in commmand line(need recent JRE or JDK):
 > benchmark:Disk finished in 11224, turn = 8 score = 213.82751247327155
 ```
 
-### Amazon Linux AMI (Xeon(R) E5-2670 v2 @ 2.50GHz (1 cpu core))
+### Amazon Linux AMI (Xeon E5-2670 v2 @ 2.50GHz (1 cpu core))
 ```
 Start benchmark v2.2
 CpuMemSingle in 6,011 ms(436 turns), score = 217,601
@@ -81,7 +81,7 @@ CpuMemMT05 in 6,216 ms(23 turns), score = 11,100
 CpuMemMT x16 in 6,400 ms, score = 135,000
 DiskSingle in 6,461 ms(6 turns), score = 278
 ```
-### E5408 4 core, sata2, windows
+### Xeon L5408 4 core, sata2, windows
 ```
 Start benchmark v2.2
 CpuMemSingle in 6,014 ms(198 turns), score = 98,769
