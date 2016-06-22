@@ -58,18 +58,51 @@ run in commmand line(need recent JRE or JDK):
 > benchmark:Disk finished in 11224, turn = 8 score = 213.82751247327155
 ```
 
-### Amazon Linux AMI
+### Amazon Linux AMI (Xeon(R) E5-2670 v2 @ 2.50GHz (1 cpu core))
 ```
-benchmark:CpuMem finished in 10015, turn = 141 score = 42236.64503245132
-benchmark:CpuMem finished in 10015, turn = 126 score = 37743.384922616075
-benchmark:CpuMem finished in 10015, turn = 142 score = 42536.19570644034
-benchmark:CpuMem finished in 10029, turn = 37 score = 11067.903081064911
-multiThreadBench x4 finished in 10036, score = 33396.032185643155
-Start benchmark:Disk
-disk refvalue=70176
-disk refvalue=70176
-disk refvalue=70176
-benchmark:Disk finished in 10252, turn = 10 score = 292.6258291065158
+Start benchmark v2.2
+CpuMemSingle in 6,011 ms(436 turns), score = 217,601
+CpuMemMT04 in 6,075 ms(21 turns), score = 10,370
+CpuMemMT03 in 6,096 ms(11 turns), score = 5,413
+CpuMemMT02 in 6,118 ms(11 turns), score = 5,393
+CpuMemMT01 in 6,138 ms(11 turns), score = 5,376
+CpuMemMT06 in 6,023 ms(22 turns), score = 10,957
+CpuMemMT07 in 6,067 ms(22 turns), score = 10,878
+CpuMemMT08 in 6,110 ms(22 turns), score = 10,801
+CpuMemMT09 in 6,151 ms(22 turns), score = 10,729
+CpuMemMT10 in 6,195 ms(22 turns), score = 10,653
+CpuMemMT11 in 6,238 ms(22 turns), score = 10,580
+CpuMemMT13 in 6,305 ms(22 turns), score = 10,467
+CpuMemMT14 in 6,326 ms(18 turns), score = 8,536
+CpuMemMT00 in 6,355 ms(12 turns), score = 5,664
+CpuMemMT12 in 6,347 ms(16 turns), score = 7,562
+CpuMemMT15 in 6,372 ms(11 turns), score = 5,178
+CpuMemMT05 in 6,216 ms(23 turns), score = 11,100
+CpuMemMT x16 in 6,400 ms, score = 135,000
+DiskSingle in 6,461 ms(6 turns), score = 278
+```
+### E5408 4 core, sata2, windows
+```
+Start benchmark v2.2
+CpuMemSingle in 6,014 ms(198 turns), score = 98,769
+CpuMemMT03 in 6,015 ms(44 turns), score = 21,945
+CpuMemMT08 in 6,015 ms(44 turns), score = 21,945
+CpuMemMT04 in 6,015 ms(43 turns), score = 21,446
+CpuMemMT07 in 6,028 ms(44 turns), score = 21,897
+CpuMemMT13 in 6,069 ms(46 turns), score = 22,738
+CpuMemMT09 in 6,033 ms(44 turns), score = 21,879
+CpuMemMT11 in 6,061 ms(45 turns), score = 22,273
+CpuMemMT05 in 6,021 ms(45 turns), score = 22,421
+CpuMemMT06 in 6,001 ms(43 turns), score = 21,496
+CpuMemMT10 in 6,044 ms(45 turns), score = 22,336
+CpuMemMT00 in 6,085 ms(44 turns), score = 21,692
+CpuMemMT12 in 6,039 ms(44 turns), score = 21,857
+CpuMemMT02 in 6,077 ms(46 turns), score = 22,708
+CpuMemMT01 in 6,047 ms(47 turns), score = 23,317
+CpuMemMT15 in 6,014 ms(48 turns), score = 23,944
+CpuMemMT14 in 6,020 ms(46 turns), score = 22,923
+CpuMemMT x16 in 6,225 ms, score = 346,024
+DiskSingle in 6,948 ms(1 turns), score = 43
 ```
 
 ### please add more here
