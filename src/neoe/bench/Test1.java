@@ -35,14 +35,16 @@ public class Test1 {
 					p += size;
 				p = p % size;
 			}
-			if (cnt < 3) {
-				System.out.println("refvalue=" + p);
-				cnt++;
+			
+			if (p !=refvalue1) {
+				System.out.printf("bad refvalue=%d should be %d\n" , p, refvalue1);
 			}
 			return size * 3;
 		}
 
 	}
+	static int refvalue1 =  38464;
+	static int refvalue2 =  70176;
 
 	static class Disk1 implements BenchTask {
 
@@ -80,9 +82,9 @@ public class Test1 {
 					p = p % size;
 				}
 				raf.close();
-				if (cnt < 3) {
-					System.out.println("disk refvalue=" + p);
-					cnt++;
+				
+				if (p !=refvalue2) {
+					System.out.printf("bad refvalue=%d should be %d\n" , p, refvalue2);
 				}
 			}
 			new File(fn).delete();
@@ -91,10 +93,10 @@ public class Test1 {
 
 		int cnt;
 	}
-
+	static final int MT = 16;//threads
 	public static void main(String[] args) {
 		try {
-			multiThreadBench(4, new BenchTask() {
+			multiThreadBench(MT, new BenchTask() {
 				@Override
 				public double run() throws Exception {
 					return bench(10000, new CpuMem1(), "CpuMem");
@@ -141,7 +143,8 @@ public class Test1 {
 		if (t == 0)
 			t = 1;
 		double ret = sum / (double) cc;
-		System.out.println("multiThreadBench x" + cc + " finished in " + t + ", score = " + ret);
+		System.out.printf("multiThreadBench x%,d finished in %,d ms, score = %,d \n"
+			, cc, t, (long) ret);
 		return ret;
 	}
 
@@ -161,7 +164,8 @@ public class Test1 {
 			}
 		}
 		double score = performance / (double) t;
-		System.out.println("benchmark:" + name + " finished in " + t + ", turn = " + turn + " score = " + score);
+		System.out.printf("benchmark:%s finished in %,d ms, turn = %,d score = %,d \n" 
+			, name, t, turn, (long) score);
 		return score;
 	}
 
@@ -182,4 +186,10 @@ disk refvalue=70176
 disk refvalue=70176
 benchmark:Disk finished in 15311, score = 39.187512246097576
 ==========================
+
+E5408 4 core, sata2
+
+multiThreadBench x16 finished in 12,678 ms, score = 27,608
+benchmark:Disk finished in 13,495 ms, turn = 2 score = 44
+			
  */
