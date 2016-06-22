@@ -11,7 +11,7 @@ run in commmand line(need recent JRE or JDK):
 
 ## some results
 
-### E2180 dual core 2G Pentium
+### E2180 dual core 2G Pentium (FIXME:old data)　
 ```
 > refvalue=38464
 > multiThreadBench x4 finished in 10197, score = 28629.44906124538
@@ -27,7 +27,7 @@ run in commmand line(need recent JRE or JDK):
 
 
 
-### OrangePi PC (H3)
+### OrangePi PC (H3)  (FIXME:old data)　
 ```
 > benchmark:CpuMem finished in 12254, turn = 4 score = 979.2720744246776
 > benchmark:CpuMem finished in 12279, turn = 4 score = 977.2782799902272
@@ -39,12 +39,12 @@ run in commmand line(need recent JRE or JDK):
 > benchmark:Disk finished in 13301, turn = 1 score = 22.554695135704083
 ```
 
-### banabapi (arm)
+### banabapi (arm)  (FIXME:old data)　
 ```
 > multiThreadBench x4 finished in 16419, score = 367.20373048067046
 ```
 
-### AMD A6-3650 APU
+### AMD A6-3650 APU  (FIXME:old data)　
 ```
 > benchmark:CpuMem finished in 10000, turn = 435 score = 130500.0
 > benchmark:CpuMem finished in 10003, turn = 409 score = 122663.2010396881
