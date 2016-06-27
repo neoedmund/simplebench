@@ -44,6 +44,44 @@ run in commmand line(need recent JRE or JDK):
 > multiThreadBench x4 finished in 16419, score = 367.20373048067046
 ```
 
+### AMD FX8320 8 cores
+```
+Start benchmark v3.1
+CpuMemSingle in 6,005 ms(274 turns), score = 136,885
+CpuMemMT03 in 4,006 ms(177 turns), score = 132,551
+CpuMemMT01 in 4,007 ms(177 turns), score = 132,518
+CpuMemMT00 in 4,010 ms(173 turns), score = 129,426
+CpuMemMT02 in 4,009 ms(174 turns), score = 130,207
+CpuMemMT4 x4 in 4,014 ms, score = 523,916
+CpuMemMT02 in 4,009 ms(147 turns), score = 110,002
+CpuMemMT06 in 4,008 ms(149 turns), score = 111,526
+CpuMemMT00 in 4,010 ms(143 turns), score = 106,982
+CpuMemMT01 in 4,034 ms(148 turns), score = 110,064
+CpuMemMT03 in 4,034 ms(151 turns), score = 112,295
+CpuMemMT07 in 4,033 ms(151 turns), score = 112,323
+CpuMemMT04 in 4,018 ms(147 turns), score = 109,756
+CpuMemMT05 in 4,034 ms(148 turns), score = 110,064
+CpuMemMT8 x8 in 4,040 ms, score = 879,207
+CpuMemMT08 in 4,001 ms(84 turns), score = 62,984
+CpuMemMT02 in 4,020 ms(81 turns), score = 60,447
+CpuMemMT11 in 4,019 ms(81 turns), score = 60,462
+CpuMemMT01 in 4,012 ms(83 turns), score = 62,063
+CpuMemMT12 in 4,008 ms(78 turns), score = 58,383
+CpuMemMT03 in 4,008 ms(80 turns), score = 59,880
+CpuMemMT06 in 4,007 ms(80 turns), score = 59,895
+CpuMemMT00 in 4,003 ms(76 turns), score = 56,957
+CpuMemMT05 in 4,002 ms(80 turns), score = 59,970
+CpuMemMT04 in 4,002 ms(79 turns), score = 59,220
+CpuMemMT14 in 4,004 ms(80 turns), score = 59,940
+CpuMemMT13 in 4,004 ms(82 turns), score = 61,438
+CpuMemMT09 in 4,012 ms(77 turns), score = 57,577
+CpuMemMT10 in 4,010 ms(81 turns), score = 60,598
+CpuMemMT15 in 4,043 ms(84 turns), score = 62,329
+CpuMemMT07 in 4,021 ms(81 turns), score = 60,432
+CpuMemMT16 x16 in 4,151 ms, score = 930,137
+DiskSingle in 5,009 ms(1 turns), score = 59 (windows disk is much slower than linux score=229)
+```
+
 ### AMD A6-3650 APU
 ```
 Start benchmark v2.2

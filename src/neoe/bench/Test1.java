@@ -99,9 +99,10 @@ public class Test1 {
 
 	static final int MT = 16;// threads
 	static final int TEST_TIME_MS = 6000;
+	static final int TEST_TIME_MS2 = 4000;
 
 	public static void main(String[] args) {
-		System.out.println("Start benchmark v2.2");
+		System.out.println("Start benchmark v3.1");
 
 		try {
 			bench(TEST_TIME_MS, new CpuMem1(), "CpuMemSingle");
@@ -109,17 +110,37 @@ public class Test1 {
 			e.printStackTrace();
 		}
 		try {
-			multiThreadBench(MT, new BenchTask() {
+			multiThreadBench(4, new BenchTask() {
 				@Override
 				public double run(int index) throws Exception {
-					return bench(TEST_TIME_MS, new CpuMem1(), String.format("CpuMemMT%02d", index));
+					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT%02d", index));
 				}
-			}, "CpuMemMT");
+			}, "CpuMemMT4");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		try {
-			bench(TEST_TIME_MS, new Disk1(), "DiskSingle");
+			multiThreadBench(8, new BenchTask() {
+				@Override
+				public double run(int index) throws Exception {
+					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT%02d", index));
+				}
+			}, "CpuMemMT8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			multiThreadBench(16, new BenchTask() {
+				@Override
+				public double run(int index) throws Exception {
+					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT%02d", index));
+				}
+			}, "CpuMemMT16");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			bench(TEST_TIME_MS2, new Disk1(), "DiskSingle");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
