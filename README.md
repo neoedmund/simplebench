@@ -11,18 +11,42 @@ run in commmand line(need recent JRE or JDK):
 
 ## some results
 
-### E2180 dual core 2G Pentium (FIXME:old data)　
+### Xeon E5 2670 (8 core 16 cpu)　
 ```
-> refvalue=38464
-> multiThreadBench x4 finished in 10197, score = 28629.44906124538
-> benchmark:CpuMem finished in 10030, turn = 93 score = 27816.55034895314
-> benchmark:CpuMem finished in 10044, turn = 93 score = 27777.777777777777
-> benchmark:CpuMem finished in 10019, turn = 137 score = 41022.0580896297
-> benchmark:CpuMem finished in 10004, turn = 139 score = 41683.326669332266
-> Start benchmark:Disk
-> disk refvalue=70176
-> disk refvalue=70176
-> benchmark:Disk finished in 15311, score = 39.187512246097576
+Start benchmark v3.1
+CpuMemSingle in 6,000 ms(431 turns), score = 215,500
+CpuMemMT01 in 4,016 ms(230 turns), score = 171,812
+CpuMemMT00 in 4,016 ms(215 turns), score = 160,607
+CpuMemMT02 in 4,000 ms(224 turns), score = 168,000
+CpuMemMT03 in 4,015 ms(231 turns), score = 172,602
+CpuMemMT4 x4 in 4,047 ms, score = 667,160
+CpuMemMT03 in 4,001 ms(199 turns), score = 149,212
+CpuMemMT00 in 4,016 ms(192 turns), score = 143,426
+CpuMemMT04 in 4,016 ms(192 turns), score = 143,426
+CpuMemMT02 in 4,016 ms(195 turns), score = 145,667
+CpuMemMT01 in 4,016 ms(200 turns), score = 149,402
+CpuMemMT05 in 4,016 ms(197 turns), score = 147,161
+CpuMemMT07 in 4,000 ms(198 turns), score = 148,500
+CpuMemMT06 in 4,000 ms(197 turns), score = 147,750
+CpuMemMT8 x8 in 4,032 ms, score = 1,168,154
+CpuMemMT05 in 4,016 ms(163 turns), score = 121,762
+CpuMemMT07 in 4,032 ms(165 turns), score = 122,767
+CpuMemMT09 in 4,032 ms(162 turns), score = 120,535
+CpuMemMT10 in 4,032 ms(162 turns), score = 120,535
+CpuMemMT01 in 4,032 ms(164 turns), score = 122,023
+CpuMemMT06 in 4,032 ms(157 turns), score = 116,815
+CpuMemMT12 in 4,001 ms(160 turns), score = 119,970
+CpuMemMT08 in 4,032 ms(163 turns), score = 121,279
+CpuMemMT03 in 4,032 ms(156 turns), score = 116,071
+CpuMemMT11 in 4,016 ms(161 turns), score = 120,268
+CpuMemMT15 in 4,001 ms(164 turns), score = 122,969
+CpuMemMT02 in 4,032 ms(158 turns), score = 117,559
+CpuMemMT04 in 4,032 ms(162 turns), score = 120,535
+CpuMemMT00 in 4,032 ms(160 turns), score = 119,047
+CpuMemMT13 in 4,000 ms(160 turns), score = 120,000
+CpuMemMT14 in 4,000 ms(154 turns), score = 115,500
+CpuMemMT16 x16 in 4,047 ms, score = 1,905,856
+DiskSingle in 5,907 ms(2 turns), score = 101
 ```
 
 
