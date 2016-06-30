@@ -1,6 +1,14 @@
 # simplebench
 neoe simple benchmark program on CPU,memory and disk. Quick and meaningful results.
 
+## how it works
+The results seems more real than cpubenchmark.net and cpuboss.com
+
+neoe simple benchmark use java in all platform.
+test single, 4/8/16 threads performance.
+benchmark depends on CPU speed and memory r/w speed.
+
+
 ## usage
 run in commmand line(need recent JRE or JDK):
 ```
