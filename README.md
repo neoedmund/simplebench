@@ -10,7 +10,7 @@ benchmark depends on CPU speed and memory r/w speed.
 
 ## versions
 I wanted to keep benchmark value same across versions:
-but ver3.2 score on same set is about 10% batter than ver3.1
+but ver3.2 score on same set is about 10% better than ver3.1
 
 
 
@@ -190,8 +190,10 @@ CpuMemMT x16 in 6,225 ms, score = 346,024
 DiskSingle in 6,948 ms(1 turns), score = 43
 ```
 ### AMD Opteron 4386 (tested on VM with 1 core)
-```Start benchmark v3.1
+```
+Start benchmark v3.1
 CpuMemSingle in 6,008 ms(223 turns), score = 111,351
 ```
+
 ### please add more here
 contribute.
