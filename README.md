@@ -8,6 +8,11 @@ neoe simple benchmark use java in all platform.
 test single, 4/8/16 threads performance.
 benchmark depends on CPU speed and memory r/w speed.
 
+## versions
+I wanted to keep benchmark value same across versions:
+but ver3.2 score on same set is about 10% batter than ver3.1
+
+
 
 ## usage
 run in commmand line(need recent JRE or JDK):
