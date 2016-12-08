@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 public class Test1 {
 	static final int SIZE = 1000000;
 	static final int SIZE2 = SIZE / 10;
-	static final String VER = "v3.2";
+	static final String VER = "v3.2.1";
 	// mem size
 	static final int refvalue1 = 38464;
 	// disk size/10
@@ -28,7 +28,7 @@ public class Test1 {
 			int size = SIZE;
 			int[] bs = new int[size];
 			for (int i = 0; i < size; i++) {
-				bs[i] = (i + 1)* (i + 1);
+				bs[i] = (i + 1) * (i + 1);
 			}
 			int p = 0;
 			for (int i = 0; i < size; i++) {
@@ -54,7 +54,7 @@ public class Test1 {
 			{
 				RandomAccessFile raf = new RandomAccessFile(fn, "rw");
 				for (int i = 0; i < size; i++) {
-					raf.writeInt((i + 1)*(i + 1));
+					raf.writeInt((i + 1) * (i + 1));
 				}
 				raf.close();
 			}
@@ -87,48 +87,40 @@ public class Test1 {
 	static final int TEST_TIME_MS2 = 4000;
 
 	public static void main(String[] args) {
-		System.out.println("Start benchmark "+VER);
-
-		try {
-			bench(TEST_TIME_MS, new CpuMem1(), "CpuMemSingle");
-		} catch (Exception e) {
-			e.printStackTrace();
+		System.out.println("Start benchmark " + VER);
+		System.out.printf("Found %d processors\n", Runtime.getRuntime().availableProcessors());
+		// try {
+		// bench(TEST_TIME_MS, new CpuMem1(), "CpuMemSingle");
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// }
+		for (int t : new int[] { 1, 4, 8, 16 }) {
+			try {
+				multiThreadBench(t, new BenchTask() {
+					@Override
+					public double run(int index) throws Exception {
+						return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT_%02d", index));
+					}
+				}, "CpuMemMT");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		try {
-			multiThreadBench(4, new BenchTask() {
+			multiThreadBench(1, new BenchTask() {
 				@Override
 				public double run(int index) throws Exception {
-					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT_%02d", index));
+					return bench(TEST_TIME_MS2, new Disk1(), "DiskSingle");
 				}
-			}, "CpuMemMT");
+			}, "DiskSingle");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		try {
-			multiThreadBench(8, new BenchTask() {
-				@Override
-				public double run(int index) throws Exception {
-					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT_%02d", index));
-				}
-			}, "CpuMemMT");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			multiThreadBench(16, new BenchTask() {
-				@Override
-				public double run(int index) throws Exception {
-					return bench(TEST_TIME_MS2, new CpuMem1(), String.format("CpuMemMT_%02d", index));
-				}
-			}, "CpuMemMT");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			bench(TEST_TIME_MS2, new Disk1(), "DiskSingle");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		// try {
+		// bench(TEST_TIME_MS2, new Disk1(), "DiskSingle");
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// }
 	}
 
 	private static double multiThreadBench(int cc, final BenchTask benchTask, String myname) {
@@ -163,7 +155,7 @@ public class Test1 {
 		if (t == 0)
 			t = 1;
 		double score = sum / (double) t;
-		System.out.printf("%s x%d in %,d ms, score = %,d \n", myname, cc, t, (long) score);
+		System.out.printf("%s x%d score = %,d (%,d each)\n", myname, cc, (long) score, (long) score / cc);
 		return score;
 	}
 
@@ -183,7 +175,7 @@ public class Test1 {
 			}
 		}
 		double score = performance / (double) t;
-		System.out.printf("%s in %,d ms(%,d turns), score = %,d \n", name, t, turn, (long) score);
+		Log.log(String.format("%s in %,d ms(%,d turns), score = %,d \n", name, t, turn, (long) score));
 		return performance;
 	}
 
