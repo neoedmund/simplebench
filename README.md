@@ -24,40 +24,26 @@ run in commmand line(need recent JRE or JDK):
 
 ## some results
 
-### Xeon E5 2670 (8 core 16 cpu)　
+### Xeon E5 2670 (8 core 16 cpu)　SSD
 ```
+Start benchmark v3.2.1
+Found 16 processors
+CpuMemMT x1 score = 145,185 (145,185 each)
+CpuMemMT x4 score = 622,005 (155,501 each)
+CpuMemMT x8 score = 1,229,813 (153,726 each)
+CpuMemMT x16 score = 1,828,194 (114,262 each)
+DiskSingle x1 score = 167 (167 each)
+
 Start benchmark v3.1
 CpuMemSingle in 6,000 ms(431 turns), score = 215,500
 CpuMemMT01 in 4,016 ms(230 turns), score = 171,812
-CpuMemMT00 in 4,016 ms(215 turns), score = 160,607
-CpuMemMT02 in 4,000 ms(224 turns), score = 168,000
-CpuMemMT03 in 4,015 ms(231 turns), score = 172,602
+...
 CpuMemMT4 x4 in 4,047 ms, score = 667,160
 CpuMemMT03 in 4,001 ms(199 turns), score = 149,212
-CpuMemMT00 in 4,016 ms(192 turns), score = 143,426
-CpuMemMT04 in 4,016 ms(192 turns), score = 143,426
-CpuMemMT02 in 4,016 ms(195 turns), score = 145,667
-CpuMemMT01 in 4,016 ms(200 turns), score = 149,402
-CpuMemMT05 in 4,016 ms(197 turns), score = 147,161
-CpuMemMT07 in 4,000 ms(198 turns), score = 148,500
-CpuMemMT06 in 4,000 ms(197 turns), score = 147,750
+...
 CpuMemMT8 x8 in 4,032 ms, score = 1,168,154
 CpuMemMT05 in 4,016 ms(163 turns), score = 121,762
-CpuMemMT07 in 4,032 ms(165 turns), score = 122,767
-CpuMemMT09 in 4,032 ms(162 turns), score = 120,535
-CpuMemMT10 in 4,032 ms(162 turns), score = 120,535
-CpuMemMT01 in 4,032 ms(164 turns), score = 122,023
-CpuMemMT06 in 4,032 ms(157 turns), score = 116,815
-CpuMemMT12 in 4,001 ms(160 turns), score = 119,970
-CpuMemMT08 in 4,032 ms(163 turns), score = 121,279
-CpuMemMT03 in 4,032 ms(156 turns), score = 116,071
-CpuMemMT11 in 4,016 ms(161 turns), score = 120,268
-CpuMemMT15 in 4,001 ms(164 turns), score = 122,969
-CpuMemMT02 in 4,032 ms(158 turns), score = 117,559
-CpuMemMT04 in 4,032 ms(162 turns), score = 120,535
-CpuMemMT00 in 4,032 ms(160 turns), score = 119,047
-CpuMemMT13 in 4,000 ms(160 turns), score = 120,000
-CpuMemMT14 in 4,000 ms(154 turns), score = 115,500
+...
 CpuMemMT16 x16 in 4,047 ms, score = 1,905,856
 DiskSingle in 5,907 ms(2 turns), score = 101
 ```
@@ -86,35 +72,13 @@ DiskSingle in 5,907 ms(2 turns), score = 101
 Start benchmark v3.1
 CpuMemSingle in 6,005 ms(274 turns), score = 136,885
 CpuMemMT03 in 4,006 ms(177 turns), score = 132,551
-CpuMemMT01 in 4,007 ms(177 turns), score = 132,518
-CpuMemMT00 in 4,010 ms(173 turns), score = 129,426
-CpuMemMT02 in 4,009 ms(174 turns), score = 130,207
+...
 CpuMemMT4 x4 in 4,014 ms, score = 523,916
 CpuMemMT02 in 4,009 ms(147 turns), score = 110,002
-CpuMemMT06 in 4,008 ms(149 turns), score = 111,526
-CpuMemMT00 in 4,010 ms(143 turns), score = 106,982
-CpuMemMT01 in 4,034 ms(148 turns), score = 110,064
-CpuMemMT03 in 4,034 ms(151 turns), score = 112,295
-CpuMemMT07 in 4,033 ms(151 turns), score = 112,323
-CpuMemMT04 in 4,018 ms(147 turns), score = 109,756
-CpuMemMT05 in 4,034 ms(148 turns), score = 110,064
+...
 CpuMemMT8 x8 in 4,040 ms, score = 879,207
 CpuMemMT08 in 4,001 ms(84 turns), score = 62,984
-CpuMemMT02 in 4,020 ms(81 turns), score = 60,447
-CpuMemMT11 in 4,019 ms(81 turns), score = 60,462
-CpuMemMT01 in 4,012 ms(83 turns), score = 62,063
-CpuMemMT12 in 4,008 ms(78 turns), score = 58,383
-CpuMemMT03 in 4,008 ms(80 turns), score = 59,880
-CpuMemMT06 in 4,007 ms(80 turns), score = 59,895
-CpuMemMT00 in 4,003 ms(76 turns), score = 56,957
-CpuMemMT05 in 4,002 ms(80 turns), score = 59,970
-CpuMemMT04 in 4,002 ms(79 turns), score = 59,220
-CpuMemMT14 in 4,004 ms(80 turns), score = 59,940
-CpuMemMT13 in 4,004 ms(82 turns), score = 61,438
-CpuMemMT09 in 4,012 ms(77 turns), score = 57,577
-CpuMemMT10 in 4,010 ms(81 turns), score = 60,598
-CpuMemMT15 in 4,043 ms(84 turns), score = 62,329
-CpuMemMT07 in 4,021 ms(81 turns), score = 60,432
+...
 CpuMemMT16 x16 in 4,151 ms, score = 930,137
 DiskSingle in 5,009 ms(1 turns), score = 59 (windows disk is much slower than linux score=229)
 ```
@@ -124,21 +88,7 @@ DiskSingle in 5,009 ms(1 turns), score = 59 (windows disk is much slower than li
 Start benchmark v2.2
 CpuMemSingle in 6,013 ms(278 turns), score = 138,699 
 CpuMemMT00 in 6,011 ms(74 turns), score = 36,932 
-CpuMemMT01 in 6,020 ms(82 turns), score = 40,863 
-CpuMemMT02 in 6,015 ms(73 turns), score = 36,408 
-CpuMemMT03 in 6,027 ms(75 turns), score = 37,332 
-CpuMemMT06 in 6,001 ms(80 turns), score = 39,993 
-CpuMemMT04 in 6,032 ms(81 turns), score = 40,285 
-CpuMemMT09 in 6,000 ms(76 turns), score = 38,000 
-CpuMemMT07 in 6,023 ms(77 turns), score = 38,352 
-CpuMemMT11 in 6,001 ms(76 turns), score = 37,993 
-CpuMemMT10 in 6,022 ms(75 turns), score = 37,363 
-CpuMemMT12 in 6,000 ms(81 turns), score = 40,500 
-CpuMemMT08 in 6,039 ms(74 turns), score = 36,761 
-CpuMemMT05 in 6,045 ms(78 turns), score = 38,709 
-CpuMemMT13 in 6,014 ms(75 turns), score = 37,412 
-CpuMemMT15 in 6,013 ms(77 turns), score = 38,416 
-CpuMemMT14 in 6,047 ms(76 turns), score = 37,704 
+...
 CpuMemMT x16 in 6,164 ms, score = 598,637 
 DiskSingle in 7,216 ms(5 turns), score = 207 
 ```
