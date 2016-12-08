@@ -62,8 +62,10 @@ DiskSingle in 5,907 ms(2 turns), score = 101
 > benchmark:Disk finished in 13301, turn = 1 score = 22.554695135704083
 ```
 
-### banabapi (armv7 sun7i A20)  (FIXME:old data)　
+### banabapi (armv7 sun7i A20)  
 ```
+> multiThreadBench x4 finished in 16419, score = 367.20373048067046
+
 Start benchmark v3.2.1
 Found 2 processors
 CpuMemMT x1 score = 2,192 (2,192 each)
