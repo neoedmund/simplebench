@@ -62,9 +62,15 @@ DiskSingle in 5,907 ms(2 turns), score = 101
 > benchmark:Disk finished in 13301, turn = 1 score = 22.554695135704083
 ```
 
-### banabapi (arm)  (FIXME:old data)　
+### banabapi (armv7 sun7i A20)  (FIXME:old data)　
 ```
-> multiThreadBench x4 finished in 16419, score = 367.20373048067046
+Start benchmark v3.2.1
+Found 2 processors
+CpuMemMT x1 score = 2,192 (2,192 each)
+CpuMemMT x4 score = 4,611 (1,152 each)
+CpuMemMT x8 score = 4,627 (578 each)
+CpuMemMT x16 score = 4,422 (276 each)
+DiskSingle x1 score = 25 (25 each)
 ```
 
 ### AMD FX8320 8 cores
