@@ -166,28 +166,15 @@ CpuMemMT05 in 6,216 ms(23 turns), score = 11,100
 CpuMemMT x16 in 6,400 ms, score = 135,000
 DiskSingle in 6,461 ms(6 turns), score = 278
 ```
-### Xeon L5408 4 core, sata2, windows
+### Xeon L5408 4 core 4 thread, SSD, windows 10
 ```
-Start benchmark v2.2
-CpuMemSingle in 6,014 ms(198 turns), score = 98,769
-CpuMemMT03 in 6,015 ms(44 turns), score = 21,945
-CpuMemMT08 in 6,015 ms(44 turns), score = 21,945
-CpuMemMT04 in 6,015 ms(43 turns), score = 21,446
-CpuMemMT07 in 6,028 ms(44 turns), score = 21,897
-CpuMemMT13 in 6,069 ms(46 turns), score = 22,738
-CpuMemMT09 in 6,033 ms(44 turns), score = 21,879
-CpuMemMT11 in 6,061 ms(45 turns), score = 22,273
-CpuMemMT05 in 6,021 ms(45 turns), score = 22,421
-CpuMemMT06 in 6,001 ms(43 turns), score = 21,496
-CpuMemMT10 in 6,044 ms(45 turns), score = 22,336
-CpuMemMT00 in 6,085 ms(44 turns), score = 21,692
-CpuMemMT12 in 6,039 ms(44 turns), score = 21,857
-CpuMemMT02 in 6,077 ms(46 turns), score = 22,708
-CpuMemMT01 in 6,047 ms(47 turns), score = 23,317
-CpuMemMT15 in 6,014 ms(48 turns), score = 23,944
-CpuMemMT14 in 6,020 ms(46 turns), score = 22,923
-CpuMemMT x16 in 6,225 ms, score = 346,024
-DiskSingle in 6,948 ms(1 turns), score = 43
+Start benchmark v3.2.1
+Found 4 processors
+CpuMemMT x1 score = 100,521 (100,521 each)
+CpuMemMT x4 score = 335,320 (83,830 each)
+CpuMemMT x8 score = 359,625 (44,953 each)
+CpuMemMT x16 score = 355,227 (22,201 each)
+DiskSingle x1 score = 94 (94 each)
 ```
 ### AMD Opteron 4386 (tested on VM with 1 core)
 ```
