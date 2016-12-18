@@ -140,5 +140,28 @@ Start benchmark v3.1
 CpuMemSingle in 6,008 ms(223 turns), score = 111,351
 ```
 
+### i7-4820K 3.70GHz  SSD
+```
+Start benchmark v3.2.1
+Found 8 processors
+CpuMemMT x1 score = 213,432 (213,432 each)
+CpuMemMT x4 score = 783,870 (195,967 each)
+CpuMemMT x8 score = 1,267,479 (158,434 each)
+CpuMemMT x16 score = 1,332,188 (83,261 each)
+DiskSingle x1 score = 244 (244 each)
+```
+
+
+### G1840T  B85 
+```
+Start benchmark v3.2.1
+Found 2 processors
+CpuMemMT x1 score = 147,845 (147,845 each)
+CpuMemMT x4 score = 235,308 (58,827 each)
+CpuMemMT x8 score = 255,579 (31,947 each)
+CpuMemMT x16 score = 268,678 (16,792 each)
+DiskSingle x1 score = 535 (535 each)
+```
+
 ### please add more here
 contribute.
