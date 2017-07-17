@@ -163,5 +163,17 @@ CpuMemMT x16 score = 268,678 (16,792 each)
 DiskSingle x1 score = 535 (535 each)
 ```
 
+### Intel Core i3 6100 @ 3.70GHz
+```
+Start benchmark v3.2.1
+Found 4 processors
+CpuMemMT x1 score = 240,477 (240,477 each)
+CpuMemMT x4 score = 758,902 (189,725 each)
+CpuMemMT x8 score = 794,247 (99,280 each)
+CpuMemMT x16 score = 708,833 (44,302 each)
+DiskSingle x1 score = 385 (385 each)
+```
+
+
 ### please add more here
 contribute.
