@@ -173,7 +173,17 @@ CpuMemMT x8 score = 794,247 (99,280 each)
 CpuMemMT x16 score = 708,833 (44,302 each)
 DiskSingle x1 score = 385 (385 each)
 ```
-
+### Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
+```
+Start benchmark v3.2.1
+Found 4 processors
+CpuMemMT x1 score = 163,832 (163,832 each)
+CpuMemMT x4 score = 642,488 (160,622 each)
+CpuMemMT x8 score = 640,301 (80,037 each)
+CpuMemMT x16 score = 629,410 (39,338 each)
+DiskSingle x1 score = 518 (518 each)
+```
 
 ### please add more here
 contribute.
+
