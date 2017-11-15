@@ -184,6 +184,17 @@ CpuMemMT x16 score = 629,410 (39,338 each)
 DiskSingle x1 score = 518 (518 each)
 ```
 
+### Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz
+```
+Start benchmark v3.2.1
+Found 2 processors
+CpuMemMT x1 score = 174,553 (174,553 each)
+CpuMemMT x4 score = 305,411 (76,352 each)
+CpuMemMT x8 score = 285,890 (35,736 each)
+CpuMemMT x16 score = 307,932 (19,245 each)
+DiskSingle x1 score = 470 (470 each)
+```
+
 ### please add more here
 contribute.
 
