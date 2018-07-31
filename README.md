@@ -22,6 +22,8 @@ run in commmand line(need recent JRE or JDK):
 > java -jar dist/simplebench.jar
 ```
 
+android apk download:  https://github.com/neoedmund/simplebench/raw/master/AndrApplication/app/build/outputs/apk/debug/app-debug.apk
+
 ## some results
 
 ### Xeon E5 2670 (8 core 16 cpu)　SSD
