@@ -50,7 +50,11 @@ public class Test1 {
 		@Override
 		public double run(int index) throws Exception {
 			int size = SIZE2;
-			String fn = "bm.tmp." + Long.toString(System.currentTimeMillis(), 36);
+			String fn0 =  "bm.tmp." + Long.toString(System.currentTimeMillis(), 36);
+			File fn = new File(fn0);
+			if (dir!=null) {
+				fn = new File(dir, fn0);
+			}
 			{
 				RandomAccessFile raf = new RandomAccessFile(fn, "rw");
 				for (int i = 0; i < size; i++) {
@@ -75,7 +79,7 @@ public class Test1 {
 					log(String.format("bad refvalue=%d should be %d\n", p, refvalue2));
 				}
 			}
-			new File(fn).delete();
+			fn.delete();
 			return size * 3;
 		}
 
@@ -87,7 +91,7 @@ public class Test1 {
 	static final int TEST_TIME_MS2 = 4000;
 
 	public static void main(String[] args) {
-		String s = new Test1().run();
+		String s = new Test1().run(null);
 		System.out.println("sum:"+s);
 	}
 	StringBuffer sb;
@@ -95,7 +99,9 @@ public class Test1 {
 		sb.append(s).append("\n");
 		System.out.println(s);
 	}
-	public  String run() {
+	File dir;
+	public  String run(File dir) {
+		this.dir = dir;
 		sb =  new StringBuffer();
 		log("Start benchmark " + VER);
 		log(String.format("Found %d processors\n", Runtime.getRuntime().availableProcessors()));
