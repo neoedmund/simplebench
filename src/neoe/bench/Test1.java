@@ -20,7 +20,7 @@ public class Test1 {
 		}
 	}
 
-	static class CpuMem1 implements BenchTask {
+	class CpuMem1 implements BenchTask {
 		int cnt = 0;
 
 		@Override
@@ -38,14 +38,14 @@ public class Test1 {
 					p += size;
 			}
 			if (p != refvalue1) {
-				System.out.printf("bad refvalue=%d should be %d\n", p, refvalue1);
+				log(String.format("bad refvalue=%d should be %d\n", p, refvalue1));
 			}
 			return size * 3;
 		}
 
 	}
 
-	static class Disk1 implements BenchTask {
+	class Disk1 implements BenchTask {
 
 		@Override
 		public double run(int index) throws Exception {
@@ -72,7 +72,7 @@ public class Test1 {
 				raf.close();
 
 				if (p != refvalue2) {
-					System.out.printf("bad refvalue=%d should be %d\n", p, refvalue2);
+					log(String.format("bad refvalue=%d should be %d\n", p, refvalue2));
 				}
 			}
 			new File(fn).delete();
@@ -87,8 +87,18 @@ public class Test1 {
 	static final int TEST_TIME_MS2 = 4000;
 
 	public static void main(String[] args) {
-		System.out.println("Start benchmark " + VER);
-		System.out.printf("Found %d processors\n", Runtime.getRuntime().availableProcessors());
+		String s = new Test1().run();
+		System.out.println("sum:"+s);
+	}
+	StringBuffer sb;
+	void log(String s){
+		sb.append(s).append("\n");
+		System.out.println(s);
+	}
+	public  String run() {
+		sb =  new StringBuffer();
+		log("Start benchmark " + VER);
+		log(String.format("Found %d processors\n", Runtime.getRuntime().availableProcessors()));
 		// try {
 		// bench(TEST_TIME_MS, new CpuMem1(), "CpuMemSingle");
 		// } catch (Exception e) {
@@ -121,9 +131,10 @@ public class Test1 {
 		// } catch (Exception e) {
 		// e.printStackTrace();
 		// }
+		return sb.toString();
 	}
 
-	private static double multiThreadBench(int cc, final BenchTask benchTask, String myname) {
+	private   double multiThreadBench(int cc, final BenchTask benchTask, String myname) {
 		long t1 = System.currentTimeMillis();
 		Thread[] th = new Thread[cc];
 		final double[] v = new double[cc];
@@ -155,11 +166,11 @@ public class Test1 {
 		if (t == 0)
 			t = 1;
 		double score = sum / (double) t;
-		System.out.printf("%s x%d score = %,d (%,d each)\n", myname, cc, (long) score, (long) score / cc);
+		log(String.format("%s x%d score = %,d (%,d each)\n", myname, cc, (long) score, (long) score / cc));
 		return score;
 	}
 
-	private static double bench(long time, BenchTask task, String name) throws Exception {
+	private   double bench(long time, BenchTask task, String name) throws Exception {
 		// System.out.println("Start benchmark:" + name);
 		long t1 = System.currentTimeMillis();
 		long performance = 0;
@@ -175,7 +186,7 @@ public class Test1 {
 			}
 		}
 		double score = performance / (double) t;
-		Log.log(String.format("%s in %,d ms(%,d turns), score = %,d \n", name, t, turn, (long) score));
+		//log(String.format("%s in %,d ms(%,d turns), score = %,d \n", name, t, turn, (long) score));
 		return performance;
 	}
 
