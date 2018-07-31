@@ -22,7 +22,7 @@ run in commmand line(need recent JRE or JDK):
 > java -jar dist/simplebench.jar
 ```
 
-android apk download:  https://github.com/neoedmund/simplebench/raw/master/AndrApplication/app/build/outputs/apk/debug/app-debug.apk
+android apk download:  AndrApplication/app/build/outputs/apk/debug/app-debug.apk
 
 ## some results
 
@@ -199,7 +199,7 @@ DiskSingle x1 score = 470 (470 each)
 
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
-![kiwi](https://github.com/neoedmund/simplebench/raw/master/bm1.png "kiwi")
+![kiwi](bm1.png "kiwi")
 
 
 ### please add more here
