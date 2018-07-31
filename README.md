@@ -195,6 +195,11 @@ CpuMemMT x16 score = 307,932 (19,245 each)
 DiskSingle x1 score = 470 (470 each)
 ```
 
+
+### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
+![kiwi](https://github.com/neoedmund/simplebench/raw/master/bm1.png "kiwi")
+
+
 ### please add more here
 contribute.
 
