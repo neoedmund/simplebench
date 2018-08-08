@@ -1,8 +1,10 @@
 {
-baseDir:".",
+baseDir:"."
 prjs:[
-	[simplebench, "." , { main:"neoe.bench.Test1"} ],
-],
-debug:true,
+	[simplebench  "."   { main:"neoe.bench.Test1"} ]
+]
+debug:true
+target:7
+source:7
 }
 
