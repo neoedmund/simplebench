@@ -210,10 +210,10 @@ DiskSingle x1 score = 141 (141 each)
 
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
-![kiwi](bm1.png "kiwi")
+![kiwi](bm1.png =440x)
 
 ### Phone honor9lite kirin 659
-![honor9lite](bm2.jpg "honor9lite")
+![honor9lite](bm2.jpg =440x)
 
 
 ### please add more here
