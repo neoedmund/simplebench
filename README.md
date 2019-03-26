@@ -197,6 +197,17 @@ CpuMemMT x16 score = 307,932 (19,245 each)
 DiskSingle x1 score = 470 (470 each)
 ```
 
+### AMD Ryzen 7 PRO 2700U  Windows 10
+```
+benchmark v3.2.1
+Found 8 processors
+CpuMemMT x1 score = 127,962 (127,962 each)
+CpuMemMT x4 score = 274,632 (68,658 each)
+CpuMemMT x8 score = 529,627 (66,203 each)
+CpuMemMT x16 score = 995,889 (62,243 each)
+DiskSingle x1 score = 141 (141 each)
+```
+
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
 ![kiwi](bm1.png "kiwi")
