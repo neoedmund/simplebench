@@ -197,8 +197,9 @@ CpuMemMT x16 score = 307,932 (19,245 each)
 DiskSingle x1 score = 470 (470 each)
 ```
 
-### AMD Ryzen 7 PRO 2700U  Windows 10
+### AMD Ryzen 7 PRO 2700U  
 ```
+(Windows 10)
 benchmark v3.2.1
 Found 8 processors
 CpuMemMT x1 score = 127,962 (127,962 each)
@@ -206,6 +207,15 @@ CpuMemMT x4 score = 274,632 (68,658 each)
 CpuMemMT x8 score = 529,627 (66,203 each)
 CpuMemMT x16 score = 995,889 (62,243 each)
 DiskSingle x1 score = 141 (141 each)
+
+(linux ubuntu)
+benchmark v3.2.1
+Found 8 processors
+CpuMemMT x1 score = 234,456 (234,456 each)
+CpuMemMT x4 score = 613,890 (153,472 each)
+CpuMemMT x8 score = 793,010 (99,126 each)
+CpuMemMT x16 score = 797,023 (49,813 each)
+DiskSingle x1 score = 546 (546 each)
 ```
 
 
