@@ -219,6 +219,19 @@ DiskSingle x1 score = 546 (546 each)
 ```
 
 
+### AMD EPYC 7501 32-Core Processor
+```
+Start benchmark v3.2.1
+Found 1 processors
+
+CpuMemMT x1 score = 180,209 (180,209 each)
+CpuMemMT x4 score = 161,058 (40,264 each)
+CpuMemMT x8 score = 160,038 (20,004 each)
+CpuMemMT x16 score = 160,476 (10,029 each)
+DiskSingle x1 score = 441 (441 each)
+```
+
+
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
 ![kiwi](bm1.png)
 
