@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 public class Test1 {
 	static final int SIZE = 1000000;
 	static final int SIZE2 = SIZE / 10;
-	static final String VER = "v3.2.1";
+	static final String VER = "v3.2.1.1";
 	// mem size
 	static final int refvalue1 = 38464;
 	// disk size/10
@@ -110,7 +110,7 @@ public class Test1 {
 		// } catch (Exception e) {
 		// e.printStackTrace();
 		// }
-		for (int t : new int[] { 1, 4, 8, 16 }) {
+		for (int t : new int[] { 1, 4, 8, 16, 24, 32 }) {
 			try {
 				multiThreadBench(t, new BenchTask() {
 					@Override

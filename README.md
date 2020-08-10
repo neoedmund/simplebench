@@ -231,6 +231,17 @@ CpuMemMT x16 score = 160,476 (10,029 each)
 DiskSingle x1 score = 441 (441 each)
 ```
 
+### AMD Ryzen 9 3900X
+Start benchmark v3.2.1.1 (windows 10, JDK14)
+Found 24 processors
+CpuMemMT x1 score = 332,667 (332,667 each)
+CpuMemMT x4 score = 1,340,568 (335,142 each)
+CpuMemMT x8 score = 1,451,373 (181,421 each)
+CpuMemMT x16 score = 4,174,270 (260,891 each)
+CpuMemMT x24 score = 4,589,903 (191,245 each)
+CpuMemMT x32 score = 3,736,956 (116,779 each)
+DiskSingle x1 score = 186 (186 each)
+
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
 ![kiwi](bm1.png)
