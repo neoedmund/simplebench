@@ -242,6 +242,17 @@ CpuMemMT x24 score = 4,589,903 (191,245 each)
 CpuMemMT x32 score = 3,736,956 (116,779 each)
 DiskSingle x1 score = 186 (186 each)
 
+Start benchmark v3.2.1.1 (Linux, OpenJDK 11)
+Found 24 processors
+CpuMemMT x1 score = 368,171 (368,171 each)
+CpuMemMT x4 score = 1,312,359 (328,089 each)
+CpuMemMT x8 score = 2,418,824 (302,353 each)
+CpuMemMT x16 score = 3,454,862 (215,928 each)
+CpuMemMT x24 score = 4,192,307 (174,679 each)
+CpuMemMT x32 score = 4,295,935 (134,247 each)
+
+DiskSingle x1 score = 770 (770 each)
+
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
 ![kiwi](bm1.png)
