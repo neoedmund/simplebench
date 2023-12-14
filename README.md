@@ -255,6 +255,20 @@ CpuMemMT x32 score = 4,295,935 (134,247 each)
 DiskSingle x1 score = 770 (770 each)
 ```
 
+### Ryzen 5800H
+```
+sum:Start benchmark v3.2.1.1
+Found 16 processors
+CpuMemMT x1 score = 444,943 (444,943 each)
+CpuMemMT x4 score = 1,617,228 (404,307 each)
+CpuMemMT x8 score = 2,911,698 (363,962 each)
+CpuMemMT x16 score = 4,446,134 (277,883 each)
+CpuMemMT x24 score = 4,226,878 (176,119 each)
+CpuMemMT x32 score = 4,416,409 (138,012 each)
+DiskSingle x1 score = 795 (795 each)
+```
+
+
 ```
 Ryzen zen2 cpu 多线程的一点体会
 0.. 前言:
