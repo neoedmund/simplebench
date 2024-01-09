@@ -64,7 +64,7 @@ DiskSingle in 5,907 ms(2 turns), score = 101
 > benchmark:Disk finished in 13301, turn = 1 score = 22.554695135704083
 ```
 
-### banabapi (armv7 sun7i A20)  
+### banabapi (armv7 sun7i A20)
 ```
 > multiThreadBench x4 finished in 16419, score = 367.20373048067046
 
@@ -96,11 +96,11 @@ DiskSingle in 5,009 ms(1 turns), score = 59 (windows disk is much slower than li
 ### AMD A6-3650 APU
 ```
 Start benchmark v2.2
-CpuMemSingle in 6,013 ms(278 turns), score = 138,699 
-CpuMemMT00 in 6,011 ms(74 turns), score = 36,932 
+CpuMemSingle in 6,013 ms(278 turns), score = 138,699
+CpuMemMT00 in 6,011 ms(74 turns), score = 36,932
 ...
-CpuMemMT x16 in 6,164 ms, score = 598,637 
-DiskSingle in 7,216 ms(5 turns), score = 207 
+CpuMemMT x16 in 6,164 ms, score = 598,637
+DiskSingle in 7,216 ms(5 turns), score = 207
 ```
 
 ### Amazon Linux AMI (Xeon E5-2670 v2 @ 2.50GHz (1 cpu core))
@@ -154,7 +154,7 @@ DiskSingle x1 score = 244 (244 each)
 ```
 
 
-### G1840T  B85 
+### G1840T  B85
 ```
 Start benchmark v3.2.1
 Found 2 processors
@@ -197,7 +197,7 @@ CpuMemMT x16 score = 307,932 (19,245 each)
 DiskSingle x1 score = 470 (470 each)
 ```
 
-### AMD Ryzen 7 PRO 2700U  
+### AMD Ryzen 7 PRO 2700U
 ```
 (Windows 10)
 benchmark v3.2.1
@@ -268,6 +268,20 @@ CpuMemMT x32 score = 4,416,409 (138,012 each)
 DiskSingle x1 score = 795 (795 each)
 ```
 
+### Intel i5-1135G7
+```
+sum:Start benchmark v3.2.1.1
+Found 8 processors
+
+CpuMemMT x1 score = 269,865 (269,865 each)
+CpuMemMT x4 score = 801,743 (200,435 each)
+CpuMemMT x8 score = 1,457,720 (182,215 each)
+CpuMemMT x16 score = 1,429,300 (89,331 each)
+CpuMemMT x24 score = 1,427,561 (59,481 each)
+CpuMemMT x32 score = 1,395,652 (43,614 each)
+DiskSingle x1 score = 674 (674 each)
+```
+
 
 ```
 Ryzen zen2 cpu 多线程的一点体会
@@ -276,7 +290,7 @@ Ryzen zen2 cpu 多线程的一点体会
 
 1. 算力
 已ryzen 3900X为例. 从simplebench的结果来看,总体算力达到了14核的能力.
-以2013年的i7 4820k,4 core 8 thread. 为基准,它的总体算力达到1.3M, 
+以2013年的i7 4820k,4 core 8 thread. 为基准,它的总体算力达到1.3M,
 那么12 core,就应该是4M, 从这个意义上3900x确实有12core的算力.
 虽然是拿7年前的CPU最对比,但是这7年,单核频率都保持在4GHz左右,性能也没有太大突破.
 
