@@ -314,10 +314,13 @@ Ryzen zen2 cpu 多线程的一点体会
 
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
-<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/bm1.png" width="460" />
+<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/ss/bm1.png" width="460" />
 
 ### Phone honor9lite kirin 659
-<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/bm2.jpg" width="460" />
+<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/ss/bm2.jpg" width="460" />
+
+### Phone Rakuten Hand Qualcomm® Snapdragon™ 720G
+<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/ss/simplebench_rankutenHand.jpg" width="460" />
 
 
 ### please add more here
