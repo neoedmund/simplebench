@@ -223,13 +223,24 @@ DiskSingle x1 score = 546 (546 each)
 ```
 Start benchmark v3.2.1
 Found 1 processors
-
 CpuMemMT x1 score = 180,209 (180,209 each)
 CpuMemMT x4 score = 161,058 (40,264 each)
 CpuMemMT x8 score = 160,038 (20,004 each)
 CpuMemMT x16 score = 160,476 (10,029 each)
 DiskSingle x1 score = 441 (441 each)
 ```
+
+### AMD EPYC 7713 64-Core Processor / 1 cpu
+```
+sum:Start benchmark v3.2.1
+Found 1 processors
+CpuMemMT x1 score = 213,698 (213,698 each)
+CpuMemMT x4 score = 203,690 (50,922 each)
+CpuMemMT x8 score = 201,215 (25,151 each)
+CpuMemMT x16 score = 202,079 (12,629 each)
+DiskSingle x1 score = 684 (684 each)
+```
+
 
 ### AMD Ryzen 9 3900X
 ```
