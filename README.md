@@ -333,6 +333,9 @@ Ryzen zen2 cpu 多线程的一点体会
 ### Phone Rakuten Hand Qualcomm® Snapdragon™ 720G
 <img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/ss/simplebench_rankutenHand.jpg" width="460" />
 
+### SH-M24 Snapdragon 695
+<img src="https://raw.githubusercontent.com/neoedmund/simplebench/master/ss/shm24.jpg" width="460" />
+
 
 ### please add more here
 contribute.
