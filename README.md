@@ -293,6 +293,19 @@ CpuMemMT x32 score = 1,395,652 (43,614 each)
 DiskSingle x1 score = 674 (674 each)
 ```
 
+### Rockchip RK3566 RG353VS
+```
+Start benchmark v3.2.1.1
+Found 4 processors
+CpuMemMT x1 score = 105,680 (105,680 each)
+CpuMemMT x4 score = 85,503 (21,375 each)
+CpuMemMT x8 score = 90,526 (11,315 each)
+CpuMemMT x16 score = 92,769 (5,798 each)
+CpuMemMT x24 score = 90,947 (3,789 each)
+CpuMemMT x32 score = 94,910 (2,965 each)
+DiskSingle x1 score = 165 (165 each)
+```
+
 
 ```
 Ryzen zen2 cpu 多线程的一点体会
