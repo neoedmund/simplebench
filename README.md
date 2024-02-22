@@ -293,7 +293,7 @@ CpuMemMT x32 score = 1,395,652 (43,614 each)
 DiskSingle x1 score = 674 (674 each)
 ```
 
-### Rockchip RK3566 RG353VS
+### Rockchip RK3566 RG353VS (seems memory-bounded) 
 ```
 Start benchmark v3.2.1.1
 Found 4 processors
@@ -305,6 +305,20 @@ CpuMemMT x24 score = 90,947 (3,789 each)
 CpuMemMT x32 score = 94,910 (2,965 each)
 DiskSingle x1 score = 165 (165 each)
 ```
+
+### Ryzen Z1 Extreme , Rog Ally, Windows 11
+```
+Start benchmark v3.2.1.1
+Found 16 processors
+CpuMemMT x1 score = 499,875 (499,875 each)
+CpuMemMT x4 score = 1,882,397 (470,599 each)
+CpuMemMT x8 score = 3,080,149 (385,018 each)
+CpuMemMT x16 score = 4,817,660 (301,103 each)
+CpuMemMT x24 score = 5,054,060 (210,585 each)
+CpuMemMT x32 score = 4,804,937 (150,154 each)
+DiskSingle x1 score = 858 (858 each)
+```
+
 
 
 ```
