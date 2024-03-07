@@ -319,6 +319,23 @@ CpuMemMT x32 score = 4,804,937 (150,154 each)
 DiskSingle x1 score = 858 (858 each)
 ```
 
+### Ryzen Z1 Extreme , Rog Ally, Linux
+```
+Start benchmark v3.2.1.1
+Found 16 processors
+CpuMemMT x1 score = 661,753 (661,753 each)
+CpuMemMT x4 score = 2,460,674 (615,168 each)
+CpuMemMT x8 score = 3,777,333 (472,166 each)
+CpuMemMT x16 score = 4,781,179 (298,823 each)
+CpuMemMT x24 score = 5,281,899 (220,079 each)
+CpuMemMT x32 score = 5,321,060 (166,283 each)
+DiskSingle x1 score = 750 (750 each)
+```
+
+
+
+
+
 
 
 ```
