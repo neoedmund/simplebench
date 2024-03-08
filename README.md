@@ -332,8 +332,18 @@ CpuMemMT x32 score = 5,321,060 (166,283 each)
 DiskSingle x1 score = 750 (750 each)
 ```
 
-
-
+### Macbook M3 (not that impresive?)
+```
+Start benchmark v3.2.1.1
+Found 8 processors
+CpuMemMT x1 score = 494,002 (494,002 each)
+CpuMemMT x4 score = 1,746,626 (436,656 each)
+CpuMemMT x8 score = 3,051,646 (381,455 each)
+CpuMemMT x16 score = 3,005,160 (187,822 each)
+CpuMemMT x24 score = 3,126,141 (130,255 each)
+CpuMemMT x32 score = 3,125,179 (97,661 each)
+DiskSingle x1 score = 484 (484 each)
+```
 
 
 
