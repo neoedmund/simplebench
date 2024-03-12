@@ -346,6 +346,20 @@ DiskSingle x1 score = 484 (484 each)
 ```
 
 
+### AMD Ryzen 7 7735HS
+```
+Start benchmark v3.2.1.1
+Found 16 processors
+CpuMemMT x1 score = 592,509 (592,509 each)
+CpuMemMT x4 score = 2,089,660 (522,415 each)
+CpuMemMT x8 score = 3,740,269 (467,533 each)
+CpuMemMT x16 score = 5,157,698 (322,356 each)
+CpuMemMT x24 score = 5,082,035 (211,751 each)
+CpuMemMT x32 score = 4,979,757 (155,617 each)
+DiskSingle x1 score = 748 (748 each)
+```
+
+
 ## Android
 
 ### Phone kiwi Qualcomm MSM8939v2 Snapdragon 616
