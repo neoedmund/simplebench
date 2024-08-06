@@ -359,6 +359,17 @@ CpuMemMT x32 score = 4,979,757 (155,617 each)
 DiskSingle x1 score = 748 (748 each)
 ```
 
+### AMD EPYC-Milan Processor / 3 cpu vps
+```
+Found 3 processors
+CpuMemMT x1 score = 500,748 (500,748 each)
+CpuMemMT x4 score = 1,428,571 (357,142 each)
+CpuMemMT x8 score = 1,417,721 (177,215 each)
+CpuMemMT x16 score = 1,445,836 (90,364 each)
+CpuMemMT x24 score = 1,468,432 (61,184 each)
+CpuMemMT x32 score = 1,457,569 (45,549 each)
+DiskSingle x1 score = 2,204 (2,204 each)
+```
 
 ## Android
 
