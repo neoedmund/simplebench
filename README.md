@@ -175,6 +175,7 @@ CpuMemMT x8 score = 794,247 (99,280 each)
 CpuMemMT x16 score = 708,833 (44,302 each)
 DiskSingle x1 score = 385 (385 each)
 ```
+
 ### Intel(R) Xeon(R) Platinum 8163 CPU @ 2.50GHz
 ```
 Start benchmark v3.2.1
@@ -195,6 +196,19 @@ CpuMemMT x4 score = 305,411 (76,352 each)
 CpuMemMT x8 score = 285,890 (35,736 each)
 CpuMemMT x16 score = 307,932 (19,245 each)
 DiskSingle x1 score = 470 (470 each)
+```
+
+### Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz
+```
+Start benchmark v3.2.1.1
+Found 8 processors
+CpuMemMT x1 score = 396,904 (396,904 each)
+CpuMemMT x4 score = 1,186,673 (296,668 each)
+CpuMemMT x8 score = 1,734,047 (216,755 each)
+CpuMemMT x16 score = 1,717,037 (107,314 each)
+CpuMemMT x24 score = 1,729,829 (72,076 each)
+CpuMemMT x32 score = 1,734,524 (54,203 each)
+DiskSingle x1 score = 1,278 (1,278 each)
 ```
 
 ### AMD Ryzen 7 PRO 2700U
